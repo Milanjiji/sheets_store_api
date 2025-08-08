@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --box:#32334e
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #000000;
+    --fbg: #1a1a1a;
+    --border:#9090a730;
+    --textColor:#fff;
+    --sys_1:#dca6e8;
+    --sys_2:#aa5ed7;
+    --sys_3:#6701ce;
+
+  }
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: var(--background);
+  color: var(--textColor);
+  font-family: "Inter", sans-serif;
+  letter-spacing: 0.3px;
+}
+
+.space{
+  font-family: "Space Grotesk", sans-serif;
+}
+.monospace{
+  font-family: monospace;
+}
+.inter{
+  font-family: "Inter", sans-serif;
+}
+.box_shadow{
+  box-shadow: 0px 0px 100px rgb(43, 43, 43);
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+}
+#loading-circle {
+  width: 15px;
+  height: 15px;
+  border: 3px solid rgba(0, 0, 0, 0.2);
+  border-top: 3px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+.bgColor_fore{
+  background-color: var(--foreground);
+}
+.bgColor_fore:focus{
+  border: none;
+  outline: none;
+}
+.bgColor_back{
+  background-color: var(--background);
+}
+.bgColor_box{
+  background-color: var(--box);
+}
+.small_text{
+  color: var(--textColor);
+  font-size: 14px;
+  font-weight: 200;
+  letter-spacing: 0.05px;
+
+}
+
+.inputBox{
+  color: var(--textColor);
+  font-size: 14px;
+  font-weight: 200;
+  letter-spacing: 0.05px;
+
+  margin-top: 0.5rem; 
+  padding: 0.75rem 1rem;
+  border-radius: 0.125rem;
+
+  background-color: var(--foreground);
+}
+.forgr_box{
+  background-color: var(--foreground);
+  /* border: 1px var(--border) solid; */
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin: 10px;
+  box-shadow: 0px 0px 0.5px var(--border);
+}
+.forgr_box_p{
+  background-color: var(--foreground);
+  /* border: 1px var(--border) solid; */
+  border-radius: 5px;
+  margin: 10px;
+  box-shadow: 0px 0px 0.5px var(--border);
+  overflow: hidden;
+}
+.forgr_box_sys_1{
+  background-color: var(--foreground);
+  /* border: 1px var(--border) solid; */
+  border-radius: 5px;
+  padding: 5px 12px;
+  /* box-shadow: 0px 0px 1px var(--sys_1); */
+}
+.row_box{
+  width: 130px;
+  height: 40px;
+  margin: 0px 10px;
+  display: flex;
+  align-items: center;
+  overflow: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+  font-size: 12px;
+}
+.row_box::-webkit-scrollbar {
+  display: none; 
+}
+.row_box_wrapper{
+  border-right: 1px var(--border) solid;
+}
+.row_box_container{
+  border-bottom: 1px var(--border) solid;
+  width: fit-content;
+}
+.row_box_container_b_top{
+  border-top: 1px var(--border) solid;
+  width: fit-content;
+}
+
+.width_0{
+  width: 0px;
+}
+.width_1{
+  width: 500px;
+}
+
+.border_box{
+  border: 1px var(--border) solid;
+  border-radius: 5px;
+}
+.border_50{
+  border-radius: 50;
+}
+.border_top{
+  border-top: 1px var(--border) solid;
+}
+.border_bottom{
+  border-bottom: 1px var(--border) solid;
+}
+.border_bottom_w{
+  border-bottom: 1px white solid;
+}
+
+.border_left{
+  border-left: 1px var(--border) solid;
+}
+.border_right{
+  border-right: 1px var(--border) solid;
+}
+.spread_opt{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.spread_opt_left{
+  display: flex;
+  align-items: center;
+}
+.btn_font{
+  font-size: 14px;
+  letter-spacing: 0.3px;
+}
+
+.remove_scroll_bar::-webkit-scrollbar {
+  display: none;
+}
+.remove_scroll_bar {
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
+}
+.firebase_box{
+  padding: 10px 20px;
+  font-size: 14px;
+}
+.firebase_box_hover{
+  background-color: var(--foreground);
+}
+.firebase_box{
+  border-radius: 10px;
+  border: 2px solid transparent;
+  border-image: linear-gradient(to right, white, rgba(255,255,255,0)) 1 100%;
+  border-image-slice: 1;
+}
+
