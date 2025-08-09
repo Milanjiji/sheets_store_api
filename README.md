@@ -26,3 +26,6 @@ https://sheets-store-api.vercel.app/
   ###Team contributions 
     Maria Carel:Design,readme
     Milan J:Code,deployments
+<img width="1370" height="857" alt="Screenshot 2025-08-09 at 5 48 54 AM" src="https://github.com/user-attachments/assets/ec48893b-fce8-4dc5-9668-33a59f282d7a" />
+
+<img width="1372" height="482" alt="Screenshot 2025-08-09 at 5 49 44 AM" src="https://github.com/user-attachments/assets/38603805-230b-4f01-ba29-09cf52f987d3" />
